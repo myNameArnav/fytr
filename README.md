@@ -1,3 +1,3 @@
-# fyrbot
+# fytr
 
 WIP
