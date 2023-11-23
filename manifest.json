@@ -1,9 +1,9 @@
 {
     "manifest_version": 3,
     "name": "fytr",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "Filter youtube recommendations",
-    "permissions": ["activeTab"],
+    "permissions": ["activeTab", "storage"],
     "action": {
         "default_popup": "popup.html"
     },
