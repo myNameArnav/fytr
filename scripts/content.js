@@ -1,7 +1,4 @@
-
-
 let firstRun = true
-
 
 async function getTimeFilterChoice(choice) {
     if (choice == "short") return [0, 300]
@@ -19,9 +16,9 @@ async function getYtElementsLength() {
     return Array.from(document.getElementsByTagName("ytd-rich-item-renderer")).length;
 }
 
-async function resetView(){
+async function resetView() {
     let elementList = await getYtElements()
-    for (element of elementList){
+    for (element of elementList) {
         element.style.display = "";
     }
 }
@@ -61,7 +58,7 @@ async function ytFilter(elementList) {
 }
 
 async function handleStateChange(mutations) {
-    if (document.getElementById("time-status")){
+    if (document.getElementById("time-status")) {
         console.log("State changed");
         await ytFilter(await getYtElements());
     }
