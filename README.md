@@ -13,7 +13,7 @@
 To use **fytr**, follow these steps:
 
 1. **Install the Extension:**
-   - Clone repo, follow [guide](guide).
+   - Clone repo, follow [guide](guide.md).
 
 2. **Filter Preferences:**
    - Access the extension settings to choose your preferred time filter (short, medium, long).
