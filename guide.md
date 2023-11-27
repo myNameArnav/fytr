@@ -9,5 +9,7 @@
 4. Click on `Load Unpacked`
 
    ![image](https://github.com/myNameArnav/fytr/assets/35961071/4edf5acb-fcc7-43fd-80e4-ff263b10185f)
+5. (optional) Click on pin to pin it to the status bar
 
-5. Select the repo folder
+   ![image](https://github.com/myNameArnav/fytr/assets/35961071/381ef186-0d29-45ae-a967-be7b69d1e91e)
+6. Select the repo folder
