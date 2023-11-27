@@ -1,5 +1,6 @@
-let firstRun = true
+// content.js
 
+// Function to map filter choices to time range
 async function getTimeFilterChoice(choice) {
     if (choice == "short") return [0, 300]
     else if (choice == "medium") return [301, 1200]
@@ -7,15 +8,18 @@ async function getTimeFilterChoice(choice) {
     else return [0, 0]
 }
 
+// Function to get YouTube elements on the page
 async function getYtElements() {
     let elements = document.getElementsByTagName("ytd-rich-item-renderer");
     return Array.from(elements);
 }
 
+// Function to get the length of YouTube elements on the page
 async function getYtElementsLength() {
     return Array.from(document.getElementsByTagName("ytd-rich-item-renderer")).length;
 }
 
+// Function to reset the view by displaying all elements
 async function resetView() {
     let elementList = await getYtElements()
     for (element of elementList) {
@@ -23,6 +27,7 @@ async function resetView() {
     }
 }
 
+// Function to convert time in the format HH:MM:SS to seconds
 async function convertTimeToSeconds(time) {
     let timeLen = time.split(':').length;
     if (timeLen >= 2) {
@@ -36,6 +41,7 @@ async function convertTimeToSeconds(time) {
     return false
 }
 
+// Function to filter YouTube elements based on time
 async function ytFilter(elementList) {
     console.log("Running ytFilter");
     let choiceMax = 0, choiceMin = 0;
@@ -57,6 +63,7 @@ async function ytFilter(elementList) {
     }
 }
 
+// Function to handle state changes and trigger filtering
 async function handleStateChange(mutations) {
     if (document.getElementById("time-status")) {
         console.log("State changed");
@@ -64,5 +71,6 @@ async function handleStateChange(mutations) {
     }
 }
 
+// Creating a MutationObserver to watch for changes in the DOM
 const observer = new MutationObserver(handleStateChange);
 observer.observe(document.body, { subtree: true, childList: true });
