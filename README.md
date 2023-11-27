@@ -1,4 +1,4 @@
-# fytr - YouTube Recommendations Filter
+# fytr - Filter YouTube Recommendations
 
 > [!Note]
 > Currently WIP
