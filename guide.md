@@ -3,11 +3,11 @@
 1. Clone Repository
 2. Go to `chrome://extensions/`
 3. Enable Developer mode
-   
+
    ![image](https://github.com/myNameArnav/fytr/assets/35961071/3380fbbb-b65a-4aa7-ae20-f181decc29a7)
 
-5. Click on `Load Unpacked`
-   
+4. Click on `Load Unpacked`
+
    ![image](https://github.com/myNameArnav/fytr/assets/35961071/4edf5acb-fcc7-43fd-80e4-ff263b10185f)
 
-7. Select the repo folder
+5. Select the repo folder
