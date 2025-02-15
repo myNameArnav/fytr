@@ -1,34 +1,29 @@
+<!-- popup.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>fyrbot</title>
+    <title>YouTube Time Filter</title>
     <link rel="stylesheet" href="popupStyle.css">
-    <script src="popup.js"></script>
 </head>
-
 <body>
     <div class="root">
-        <div class="title">
-            <h2>Select Time</h2>
-        </div>
+        <h2>Select Video Length</h2>
         <div class="timeFilter">
             <div class="period">
-                <input type="radio" name="Length" id="short">
-                <label for="short">Short</label>
+                <input type="radio" name="Length" id="short" required>
+                <label for="short">Short (0-5 min)</label>
             </div>
             <div class="period">
-                <input type="radio" name="Length" id="medium">
-                <label for="medium">Medium</label>
+                <input type="radio" name="Length" id="medium" checked>
+                <label for="medium">Medium (5-20 min)</label>
             </div>
             <div class="period">
                 <input type="radio" name="Length" id="long">
-                <label for="long">Long</label>
+                <label for="long">Long (20+ min)</label>
             </div>
         </div>
     </div>
-
+    <script src="popup.js"></script>
 </body>
-
 </html>
